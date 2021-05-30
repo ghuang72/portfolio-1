@@ -1,0 +1,153 @@
+.about-main {
+  background-color: white;
+  height: 85vh;
+  margin: 10px 10px;
+  box-sizing: border-box;
+}
+
+.about-heading {
+  font-size: 2.6rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-heading:hover {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.about-column {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.about-left {
+  /* border: 1px solid black; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.generate-fact {
+  background: rgb(148, 187, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 187, 233, 1) 0%,
+    rgba(238, 174, 202, 1) 100%
+  );
+  color: white;
+  border: 4px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 4px #000000;
+  margin: 20px 20px;
+  position: relative;
+  width: 50%;
+}
+
+.speech-bubble {
+  position: relative;
+  background: rgb(250, 216, 231);
+  border-radius: 0.4em;
+  box-shadow: 2px 2px 4px #000000;
+  height: 200px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: rgba(250, 216, 231);
+  border-right: 0;
+  margin-top: -20px;
+  margin-right: -20px;
+}
+
+.about-funfact {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px 20px;
+  width: 80%;
+}
+
+.about-right {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+
+.about-picture {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-picture:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.about-linkedin {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.about-linkedin:hover {
+  /* text-decoration: underline; */
+  color: purple;
+  transition: all 0.3s ease-out;
+}
