@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const handleClick = () => {
-    alert("Sorry this is so bare!! It was my birthday this weekend and so I didn't have time to make everything. :(");
+    alert("This site is a WIP");
   };
   return (
     <nav className="navbar">
